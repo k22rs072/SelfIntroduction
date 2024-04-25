@@ -23,6 +23,14 @@ struct CounterView: View {
             Text("+")
         })
     }
+    
+    private func CountMinusButton() -> some View{
+        Button(action: {
+            count -= 1
+        }, label: {
+            Text("-")
+        })
+    }
 }
 
 #Preview {
