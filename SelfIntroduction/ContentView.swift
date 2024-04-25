@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowingView: Bool = false
     var body: some View {
         VStack {
             NavigationStack{
@@ -16,8 +17,17 @@ struct ContentView: View {
                     
                 } label: {
                     Text("jojo")
+                        .font(.largeTitle)
                 }
             }
+            Button {
+                        isShowingView.toggle()//わかんない多分t、f切り替え
+                    } label: {
+                        Text("シート")
+                    }
+                    .sheet(isPresented: $isShowingView) {
+                        Voice()//なんで＄付く
+                    }
         }
         .padding()
     }
