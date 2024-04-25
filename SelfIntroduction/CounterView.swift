@@ -41,7 +41,7 @@ struct CounterView: View {
             count -= 1
         }, label: {
             Text("-")
-                .padding()//背景の四角の範囲を決めている
+                .padding()//背景の四角の範囲を決めている,順序が大事、テキストに余白を足した分に背景が付いている
                 .background(Color.yellow, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
                 .font(.largeTitle)//文字のサイズ
                 .foregroundStyle(Color.gray)//文字の色
