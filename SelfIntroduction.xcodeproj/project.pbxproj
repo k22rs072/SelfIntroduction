@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5397E5F2BDF619E00DAD03F /* JankenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397E5E2BDF619E00DAD03F /* JankenView.swift */; };
 		B5841AB62BDA33D500AA3279 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5841AB52BDA33D500AA3279 /* CounterView.swift */; };
 		B58743672BDA22EF009F60F2 /* SelfIntroductionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58743662BDA22EF009F60F2 /* SelfIntroductionApp.swift */; };
 		B58743692BDA22EF009F60F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58743682BDA22EF009F60F2 /* ContentView.swift */; };
@@ -15,7 +16,7 @@
 		B58743782BDA22F2009F60F2 /* SelfIntroductionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58743772BDA22F2009F60F2 /* SelfIntroductionTests.swift */; };
 		B58743822BDA22F2009F60F2 /* SelfIntroductionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58743812BDA22F2009F60F2 /* SelfIntroductionUITests.swift */; };
 		B58743842BDA22F2009F60F2 /* SelfIntroductionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58743832BDA22F2009F60F2 /* SelfIntroductionUITestsLaunchTests.swift */; };
-		B5DBEB402BDA8C4E00417A19 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBEB3F2BDA8C4E00417A19 /* Voice.swift */; };
+		B5DBEB402BDA8C4E00417A19 /* VoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBEB3F2BDA8C4E00417A19 /* VoiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5397E5E2BDF619E00DAD03F /* JankenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenView.swift; sourceTree = "<group>"; };
 		B5841AB52BDA33D500AA3279 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		B58743632BDA22EF009F60F2 /* SelfIntroduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfIntroduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58743662BDA22EF009F60F2 /* SelfIntroductionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionApp.swift; sourceTree = "<group>"; };
@@ -47,7 +49,7 @@
 		B587437D2BDA22F2009F60F2 /* SelfIntroductionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfIntroductionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58743812BDA22F2009F60F2 /* SelfIntroductionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionUITests.swift; sourceTree = "<group>"; };
 		B58743832BDA22F2009F60F2 /* SelfIntroductionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B5DBEB3F2BDA8C4E00417A19 /* Voice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
+		B5DBEB3F2BDA8C4E00417A19 /* VoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,8 @@
 			children = (
 				B58743662BDA22EF009F60F2 /* SelfIntroductionApp.swift */,
 				B58743682BDA22EF009F60F2 /* ContentView.swift */,
-				B5DBEB3F2BDA8C4E00417A19 /* Voice.swift */,
+				B5397E5E2BDF619E00DAD03F /* JankenView.swift */,
+				B5DBEB3F2BDA8C4E00417A19 /* VoiceView.swift */,
 				B5841AB52BDA33D500AA3279 /* CounterView.swift */,
 				B587436A2BDA22F2009F60F2 /* Assets.xcassets */,
 				B587436C2BDA22F2009F60F2 /* Preview Content */,
@@ -263,8 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DBEB402BDA8C4E00417A19 /* Voice.swift in Sources */,
+				B5DBEB402BDA8C4E00417A19 /* VoiceView.swift in Sources */,
 				B58743692BDA22EF009F60F2 /* ContentView.swift in Sources */,
+				B5397E5F2BDF619E00DAD03F /* JankenView.swift in Sources */,
 				B58743672BDA22EF009F60F2 /* SelfIntroductionApp.swift in Sources */,
 				B5841AB62BDA33D500AA3279 /* CounterView.swift in Sources */,
 			);

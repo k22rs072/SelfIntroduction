@@ -21,12 +21,12 @@ struct ContentView: View {
                 }
             }
             Button {
-                        isShowingView.toggle()//わかんない多分t、f切り替え
+                        isShowingView.toggle()//t、f切り替え
                     } label: {
                         Text("シート")
                     }
                     .sheet(isPresented: $isShowingView) {
-                        Voice()//なんで＄付く
+                        Voice()//バインディングの値を渡したい＄付く
                     }
         }
         .padding()
