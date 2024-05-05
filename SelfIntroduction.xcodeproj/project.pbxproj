@@ -16,6 +16,10 @@
 		B58743782BDA22F2009F60F2 /* SelfIntroductionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58743772BDA22F2009F60F2 /* SelfIntroductionTests.swift */; };
 		B58743822BDA22F2009F60F2 /* SelfIntroductionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58743812BDA22F2009F60F2 /* SelfIntroductionUITests.swift */; };
 		B58743842BDA22F2009F60F2 /* SelfIntroductionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58743832BDA22F2009F60F2 /* SelfIntroductionUITestsLaunchTests.swift */; };
+		B598AEA52BE104A000A21DDA /* MyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598AEA42BE104A000A21DDA /* MyScrollView.swift */; };
+		B598AEA92BE12B3800A21DDA /* ShortsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598AEA82BE12B3800A21DDA /* ShortsScrollView.swift */; };
+		B598AEAB2BE145B800A21DDA /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598AEAA2BE145B800A21DDA /* SwipeView.swift */; };
+		B5C3A3AF2BE7311400F457D1 /* MyScroll2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3AE2BE7311400F457D1 /* MyScroll2View.swift */; };
 		B5DBEB402BDA8C4E00417A19 /* VoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBEB3F2BDA8C4E00417A19 /* VoiceView.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +53,10 @@
 		B587437D2BDA22F2009F60F2 /* SelfIntroductionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfIntroductionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58743812BDA22F2009F60F2 /* SelfIntroductionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionUITests.swift; sourceTree = "<group>"; };
 		B58743832BDA22F2009F60F2 /* SelfIntroductionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B598AEA42BE104A000A21DDA /* MyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScrollView.swift; sourceTree = "<group>"; };
+		B598AEA82BE12B3800A21DDA /* ShortsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsScrollView.swift; sourceTree = "<group>"; };
+		B598AEAA2BE145B800A21DDA /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		B5C3A3AE2BE7311400F457D1 /* MyScroll2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScroll2View.swift; sourceTree = "<group>"; };
 		B5DBEB3F2BDA8C4E00417A19 /* VoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,8 +111,12 @@
 				B58743662BDA22EF009F60F2 /* SelfIntroductionApp.swift */,
 				B58743682BDA22EF009F60F2 /* ContentView.swift */,
 				B5397E5E2BDF619E00DAD03F /* JankenView.swift */,
+				B598AEA82BE12B3800A21DDA /* ShortsScrollView.swift */,
 				B5DBEB3F2BDA8C4E00417A19 /* VoiceView.swift */,
+				B598AEAA2BE145B800A21DDA /* SwipeView.swift */,
 				B5841AB52BDA33D500AA3279 /* CounterView.swift */,
+				B598AEA42BE104A000A21DDA /* MyScrollView.swift */,
+				B5C3A3AE2BE7311400F457D1 /* MyScroll2View.swift */,
 				B587436A2BDA22F2009F60F2 /* Assets.xcassets */,
 				B587436C2BDA22F2009F60F2 /* Preview Content */,
 			);
@@ -267,10 +279,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5DBEB402BDA8C4E00417A19 /* VoiceView.swift in Sources */,
+				B5C3A3AF2BE7311400F457D1 /* MyScroll2View.swift in Sources */,
 				B58743692BDA22EF009F60F2 /* ContentView.swift in Sources */,
 				B5397E5F2BDF619E00DAD03F /* JankenView.swift in Sources */,
 				B58743672BDA22EF009F60F2 /* SelfIntroductionApp.swift in Sources */,
+				B598AEA92BE12B3800A21DDA /* ShortsScrollView.swift in Sources */,
+				B598AEAB2BE145B800A21DDA /* SwipeView.swift in Sources */,
 				B5841AB62BDA33D500AA3279 /* CounterView.swift in Sources */,
+				B598AEA52BE104A000A21DDA /* MyScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

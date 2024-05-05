@@ -15,7 +15,11 @@ import SwiftUI
 enum Constants{
     static let jankenHand = ["rock","scissor","paper"]
     static let result = ["あいこ","負け","勝ち"]
+    static let bounds = UIScreen.main.bounds
+    static let width = bounds.width
+    static let height = bounds.height
 }
+
 struct JankenView: View {
     @State private var enemyHand = 0
     @State private var yourHand = 0
@@ -28,6 +32,11 @@ struct JankenView: View {
                 JankenButtonView(yourHand: 0)
                 JankenButtonView(yourHand: 1)
                 JankenButtonView(yourHand: 2)
+                //Image(systemName: "popcorn")
+//                Image(decorative: "pug")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: Constants.width*0.3)
             }
             Text("\(Constants.result[(yourHand - enemyHand + 3)%3])")
 //            if yourvalue == 1 && SelectedHand == Janken.scissor.rawValue{

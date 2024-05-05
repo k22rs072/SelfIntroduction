@@ -16,7 +16,14 @@ struct ContentView: View {
                     CounterView()
                     
                 } label: {
-                    Text("jojo")
+                    Text("Counter")
+                        .font(.largeTitle)
+                }
+                NavigationLink{
+                    JankenView()
+                    
+                } label: {
+                    Text("Janken")
                         .font(.largeTitle)
                 }
             }
