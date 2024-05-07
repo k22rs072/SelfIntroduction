@@ -33,7 +33,7 @@ struct JankenView: View {
                 JankenButtonView(yourHand: 1)
                 JankenButtonView(yourHand: 2)
                 //Image(systemName: "popcorn")
-//                Image(decorative: "pug")
+//               Image(decorative: "pug")
 //                    .resizable()
 //                    .scaledToFit()
 //                    .frame(width: Constants.width*0.3)
