@@ -22,11 +22,11 @@ struct SwipeView: View {
                 .gesture(
                     DragGesture()
                         .onEnded { gesture in
-                            if gesture.translation.height > 100 {
+                            if gesture.translation.height < -100 {
                                 withAnimation {
                                     self.isShowingSecondView = true
                                 }
-                            } else if gesture.translation.height < -100 {
+                            } else if gesture.translation.height > 100 {
                                 withAnimation {
                                     self.isShowingSecondView = false
                                 }
@@ -38,7 +38,7 @@ struct SwipeView: View {
 struct FirstView: View {
     var body: some View {
         ZStack {
-            Color.blue.edgesIgnoringSafeArea(.all)
+            Color.red.edgesIgnoringSafeArea(.all)
             Text("First View")
                 .foregroundColor(.white)
                 .font(.title)
