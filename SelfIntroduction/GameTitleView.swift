@@ -13,9 +13,29 @@ struct GameTitleView: View {
             VStack {
                 Text("GameTitle")
                     .font(.largeTitle)
-                NavigationLink(destination: Game2View()) {
-                    Text("Game")
+                NavigationLink(destination: Game2EasyView()) {
+                    Text("easy")
                         .font(.largeTitle)
+                        .padding()
+                        .background(Color.green, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
+                        .font(.largeTitle)//文字のサイズ
+                    
+                }
+                NavigationLink(destination: Game2View()) {
+                    Text("nomal")
+                        .font(.largeTitle)
+                        .padding()
+                        .background(Color.yellow, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
+                        .font(.largeTitle)//文字のサイズ
+                    
+                }
+                NavigationLink(destination: Game2HardView()) {
+                    Text("hard")
+                        .font(.largeTitle)
+                        .padding()
+                        .background(Color.red, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
+                        .font(.largeTitle)//文字のサイズ
+                    
                 }
             }
             
