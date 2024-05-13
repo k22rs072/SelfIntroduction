@@ -11,7 +11,7 @@ import SwiftUI
 struct SelfIntroductionApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameTitleView()
         }
     }
 }
