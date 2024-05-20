@@ -37,6 +37,10 @@ struct Game2View: View {
                     .scaledToFit()
                     .frame(width: 300,height: 300)
                     .position(x: x,y: y)
+                    .onAppear(){
+                        x = geometry.size.width/2
+                        y = geometry.size.height/2
+                    }
                     .onTapGesture {
                                             // 円がタップされたときに x を更新する
                         if timerIsRunning {
