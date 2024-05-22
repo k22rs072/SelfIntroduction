@@ -29,8 +29,8 @@
 		B5C3A3B42BEA570700F457D1 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3B32BEA570700F457D1 /* GameView.swift */; };
 		B5C3A3B62BEA639800F457D1 /* Game2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3B52BEA639800F457D1 /* Game2View.swift */; };
 		B5C3A3B82BEA896C00F457D1 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3B72BEA896C00F457D1 /* TimerView.swift */; };
-		B5C3A3BD2BEAA75400F457D1 /* 新規録音 3 (online-audio-converter.com).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5C3A3BC2BEAA75400F457D1 /* 新規録音 3 (online-audio-converter.com).mp3 */; };
-		B5C3A3BF2BEAA8A400F457D1 /* 新規録音 8 (online-audio-converter.com).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5C3A3BE2BEAA8A400F457D1 /* 新規録音 8 (online-audio-converter.com).mp3 */; };
+		B5C3A3BD2BEAA75400F457D1 /* voice2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5C3A3BC2BEAA75400F457D1 /* voice2.mp3 */; };
+		B5C3A3BF2BEAA8A400F457D1 /* voice1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5C3A3BE2BEAA8A400F457D1 /* voice1.mp3 */; };
 		B5C3A3C12BEAA96C00F457D1 /* GameTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3C02BEAA96C00F457D1 /* GameTitleView.swift */; };
 		B5DBEB402BDA8C4E00417A19 /* VoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DBEB3F2BDA8C4E00417A19 /* VoiceView.swift */; };
 /* End PBXBuildFile section */
@@ -79,8 +79,8 @@
 		B5C3A3B32BEA570700F457D1 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		B5C3A3B52BEA639800F457D1 /* Game2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2View.swift; sourceTree = "<group>"; };
 		B5C3A3B72BEA896C00F457D1 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		B5C3A3BC2BEAA75400F457D1 /* 新規録音 3 (online-audio-converter.com).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "新規録音 3 (online-audio-converter.com).mp3"; sourceTree = "<group>"; };
-		B5C3A3BE2BEAA8A400F457D1 /* 新規録音 8 (online-audio-converter.com).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "新規録音 8 (online-audio-converter.com).mp3"; sourceTree = "<group>"; };
+		B5C3A3BC2BEAA75400F457D1 /* voice2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice2.mp3; sourceTree = "<group>"; };
+		B5C3A3BE2BEAA8A400F457D1 /* voice1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice1.mp3; sourceTree = "<group>"; };
 		B5C3A3C02BEAA96C00F457D1 /* GameTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTitleView.swift; sourceTree = "<group>"; };
 		B5DBEB3F2BDA8C4E00417A19 /* VoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,8 +154,8 @@
 				B53E36DD2BEB19E400A54DE2 /* Game2EasyView.swift */,
 				B5C3A3B72BEA896C00F457D1 /* TimerView.swift */,
 				B587436A2BDA22F2009F60F2 /* Assets.xcassets */,
-				B5C3A3BE2BEAA8A400F457D1 /* 新規録音 8 (online-audio-converter.com).mp3 */,
-				B5C3A3BC2BEAA75400F457D1 /* 新規録音 3 (online-audio-converter.com).mp3 */,
+				B5C3A3BE2BEAA8A400F457D1 /* voice1.mp3 */,
+				B5C3A3BC2BEAA75400F457D1 /* voice2.mp3 */,
 				B587436C2BDA22F2009F60F2 /* Preview Content */,
 			);
 			path = SelfIntroduction;
@@ -290,9 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5C3A3BF2BEAA8A400F457D1 /* 新規録音 8 (online-audio-converter.com).mp3 in Resources */,
+				B5C3A3BF2BEAA8A400F457D1 /* voice1.mp3 in Resources */,
 				B587436E2BDA22F2009F60F2 /* Preview Assets.xcassets in Resources */,
-				B5C3A3BD2BEAA75400F457D1 /* 新規録音 3 (online-audio-converter.com).mp3 in Resources */,
+				B5C3A3BD2BEAA75400F457D1 /* voice2.mp3 in Resources */,
 				B587436B2BDA22F2009F60F2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +508,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,6 +538,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,7 +561,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y32M6T2Q5U;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.kyusan-u.SelfIntroductionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -579,7 +581,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y32M6T2Q5U;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.kyusan-u.SelfIntroductionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -598,6 +600,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y32M6T2Q5U;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.kyusan-u.SelfIntroductionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -616,6 +619,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y32M6T2Q5U;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.kyusan-u.SelfIntroductionUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
