@@ -35,7 +35,7 @@ struct Game2View: View {
                 Image(decorative: "face")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 300,height: 300)
+                    .frame(width: 256)
                     .position(x: x,y: y)
                     .onAppear(){
                         x = geometry.size.width/2
@@ -89,7 +89,7 @@ struct Game2View: View {
         
     }
     func playSound() {
-            guard let url = Bundle.main.url(forResource: "voice1)", withExtension: "mp3") else { return }
+            guard let url = Bundle.main.url(forResource: "voice2", withExtension: "mp3") else { return }
             
             do {
                 player = try AVAudioPlayer(contentsOf: url)
@@ -99,7 +99,7 @@ struct Game2View: View {
             }
         }
     func playSound２() {
-            guard let url = Bundle.main.url(forResource: "voice2", withExtension: "mp3") else { return }
+            guard let url = Bundle.main.url(forResource: "voice1", withExtension: "mp3") else { return }
             
             do {
                 player = try AVAudioPlayer(contentsOf: url)

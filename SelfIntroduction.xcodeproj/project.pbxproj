@@ -13,6 +13,7 @@
 		B53E36E02BF0FEC100A54DE2 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E36DF2BF0FEC100A54DE2 /* DataView.swift */; };
 		B53E36E22BF1CEC300A54DE2 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E36E12BF1CEC300A54DE2 /* DateView.swift */; };
 		B53E36E42BF1E7D200A54DE2 /* TextDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E36E32BF1E7D200A54DE2 /* TextDataView.swift */; };
+		B54B98462C05613300CC1E4F /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B98452C05613300CC1E4F /* PopupView.swift */; };
 		B5841AB62BDA33D500AA3279 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5841AB52BDA33D500AA3279 /* CounterView.swift */; };
 		B58743672BDA22EF009F60F2 /* SelfIntroductionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58743662BDA22EF009F60F2 /* SelfIntroductionApp.swift */; };
 		B58743692BDA22EF009F60F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58743682BDA22EF009F60F2 /* ContentView.swift */; };
@@ -26,7 +27,6 @@
 		B598AEAB2BE145B800A21DDA /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598AEAA2BE145B800A21DDA /* SwipeView.swift */; };
 		B5C3A3AF2BE7311400F457D1 /* MyScroll2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3AE2BE7311400F457D1 /* MyScroll2View.swift */; };
 		B5C3A3B12BE921C100F457D1 /* MyScroll3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3B02BE921C100F457D1 /* MyScroll3View.swift */; };
-		B5C3A3B42BEA570700F457D1 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3B32BEA570700F457D1 /* GameView.swift */; };
 		B5C3A3B62BEA639800F457D1 /* Game2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3B52BEA639800F457D1 /* Game2View.swift */; };
 		B5C3A3B82BEA896C00F457D1 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3B72BEA896C00F457D1 /* TimerView.swift */; };
 		B5C3A3BD2BEAA75400F457D1 /* voice2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5C3A3BC2BEAA75400F457D1 /* voice2.mp3 */; };
@@ -59,6 +59,7 @@
 		B53E36DF2BF0FEC100A54DE2 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		B53E36E12BF1CEC300A54DE2 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
 		B53E36E32BF1E7D200A54DE2 /* TextDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDataView.swift; sourceTree = "<group>"; };
+		B54B98452C05613300CC1E4F /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
 		B5841AB52BDA33D500AA3279 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		B58743632BDA22EF009F60F2 /* SelfIntroduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfIntroduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58743662BDA22EF009F60F2 /* SelfIntroductionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionApp.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		B5C3A3AE2BE7311400F457D1 /* MyScroll2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScroll2View.swift; sourceTree = "<group>"; };
 		B5C3A3B02BE921C100F457D1 /* MyScroll3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScroll3View.swift; sourceTree = "<group>"; };
 		B5C3A3B22BE9DE2500F457D1 /* mov_hts-samp003.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mov_hts-samp003.mp4"; sourceTree = "<group>"; };
-		B5C3A3B32BEA570700F457D1 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		B5C3A3B52BEA639800F457D1 /* Game2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2View.swift; sourceTree = "<group>"; };
 		B5C3A3B72BEA896C00F457D1 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		B5C3A3BC2BEAA75400F457D1 /* voice2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice2.mp3; sourceTree = "<group>"; };
@@ -140,12 +140,12 @@
 				B598AEA82BE12B3800A21DDA /* ShortsScrollView.swift */,
 				B5DBEB3F2BDA8C4E00417A19 /* VoiceView.swift */,
 				B598AEAA2BE145B800A21DDA /* SwipeView.swift */,
-				B5841AB52BDA33D500AA3279 /* CounterView.swift */,
 				B598AEA42BE104A000A21DDA /* MyScrollView.swift */,
+				B5841AB52BDA33D500AA3279 /* CounterView.swift */,
 				B5C3A3AE2BE7311400F457D1 /* MyScroll2View.swift */,
 				B5C3A3B02BE921C100F457D1 /* MyScroll3View.swift */,
-				B5C3A3B32BEA570700F457D1 /* GameView.swift */,
 				B5C3A3B52BEA639800F457D1 /* Game2View.swift */,
+				B54B98452C05613300CC1E4F /* PopupView.swift */,
 				B53E36DB2BEB181900A54DE2 /* Game2HardView.swift */,
 				B5C3A3C02BEAA96C00F457D1 /* GameTitleView.swift */,
 				B53E36DF2BF0FEC100A54DE2 /* DataView.swift */,
@@ -320,6 +320,7 @@
 			files = (
 				B5DBEB402BDA8C4E00417A19 /* VoiceView.swift in Sources */,
 				B5C3A3AF2BE7311400F457D1 /* MyScroll2View.swift in Sources */,
+				B54B98462C05613300CC1E4F /* PopupView.swift in Sources */,
 				B58743692BDA22EF009F60F2 /* ContentView.swift in Sources */,
 				B5397E5F2BDF619E00DAD03F /* JankenView.swift in Sources */,
 				B58743672BDA22EF009F60F2 /* SelfIntroductionApp.swift in Sources */,
@@ -328,7 +329,6 @@
 				B53E36E02BF0FEC100A54DE2 /* DataView.swift in Sources */,
 				B5C3A3B62BEA639800F457D1 /* Game2View.swift in Sources */,
 				B53E36DE2BEB19E400A54DE2 /* Game2EasyView.swift in Sources */,
-				B5C3A3B42BEA570700F457D1 /* GameView.swift in Sources */,
 				B5C3A3B12BE921C100F457D1 /* MyScroll3View.swift in Sources */,
 				B53E36DC2BEB181900A54DE2 /* Game2HardView.swift in Sources */,
 				B598AEA92BE12B3800A21DDA /* ShortsScrollView.swift in Sources */,

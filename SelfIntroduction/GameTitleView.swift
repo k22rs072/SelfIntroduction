@@ -8,55 +8,48 @@
 import SwiftUI
 
 struct GameTitleView: View {
+    @State var showingPopUp = false
     var body: some View {
         NavigationView {
-            VStack {
-                Text("GameTitle")
-                    .font(.largeTitle)
-                NavigationLink(destination: TextDataView()) {
-                    Text("TextData")
+            ZStack{
+                VStack {
+                    Text("GameTitle")
                         .font(.largeTitle)
-                        .foregroundStyle(Color.gray)
-                        .padding()
-                        .background(Color.white, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
-                        .font(.largeTitle)//文字のサイズ
+                    NavigationLink(destination: TextDataView()) {
+                        Text("TextData")
+                            .font(.largeTitle)
+                            .foregroundStyle(Color.gray)
+                            .padding()
+                            .background(Color.white, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
+                            .font(.largeTitle)//文字のサイズ
+                        
+                    }
+                    NavigationLink(destination: DataView()) {
+                        Text("Data")
+                            .font(.largeTitle)
+                            .foregroundStyle(Color.gray)
+                            .padding()
+                            .background(Color.blue, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
+                            .font(.largeTitle)//文字のサイズ
+                        
+                    }
                     
+                    Button(action: {
+                        withAnimation {
+                            showingPopUp = true
+                        }
+                    }, label: {
+                        Text("Let's Play")
+                            .font(.largeTitle)
+                            .foregroundStyle(Color.white)
+                            .padding()
+                            .background(Color.gray, in: RoundedRectangle(cornerRadius:8))//背景の形と色を決定
+                        
+                    })
                 }
-                NavigationLink(destination: DataView()) {
-                    Text("Data")
-                        .font(.largeTitle)
-                        .foregroundStyle(Color.gray)
-                        .padding()
-                        .background(Color.blue, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
-                        .font(.largeTitle)//文字のサイズ
-                    
-                }
-                NavigationLink(destination: Game2EasyView()) {
-                    Text("easy")
-                        .font(.largeTitle)
-                        .foregroundStyle(Color.gray)
-                        .padding()
-                        .background(Color.green, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
-                        .font(.largeTitle)//文字のサイズ
-                    
-                }
-                NavigationLink(destination: Game2View()) {
-                    Text("normal")
-                        .font(.largeTitle)
-                        .foregroundStyle(Color.gray)
-                        .padding()
-                        .background(Color.yellow, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
-                        .font(.largeTitle)//文字のサイズ
-                    
-                }
-                NavigationLink(destination: Game2HardView()) {
-                    Text("hard")
-                        .font(.largeTitle)
-                        .foregroundStyle(Color.gray)
-                        .padding()
-                        .background(Color.red, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
-                        .font(.largeTitle)//文字のサイズ
-                    
+                if showingPopUp {
+                    PopupView(isPresent: $showingPopUp)
+                        
                 }
             }
             
@@ -65,11 +58,11 @@ struct GameTitleView: View {
 }
 
 
-//struct GameTitleView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        GameTitleView()
-//    }
-//}
-#Preview {
-    GameTitleView()
+struct GameTitleView_Previews: PreviewProvider {
+    static var previews: some View {
+        GameTitleView()
+    }
 }
+//#Preview {
+//    GameTitleView()
+//}
