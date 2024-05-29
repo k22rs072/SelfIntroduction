@@ -43,7 +43,7 @@ struct PopupView: View {
 //                Image("face")
 //                    .resizable()
 //                    .frame(width: 80, height: 80)
-                NavigationLink(destination: Game2EasyView()) {
+                NavigationLink(destination: Game2View(size: 1026)) {
                     Text("easy")
                         .font(.largeTitle)
                         .foregroundStyle(Color.gray)
@@ -52,7 +52,7 @@ struct PopupView: View {
                         .font(.largeTitle)//文字のサイズ
                     
                 }
-                NavigationLink(destination: Game2View()) {
+                NavigationLink(destination: Game2View(size: 256)) {
                     Text("normal")
                         .font(.largeTitle)
                         .foregroundStyle(Color.gray)
@@ -60,7 +60,7 @@ struct PopupView: View {
                         .background(Color.yellow, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
                         .font(.largeTitle)//文字のサイズ
                 }
-                NavigationLink(destination: Game2HardView()) {
+                NavigationLink(destination: Game2View(size: 64)) {
                     Text("hard")
                         .font(.largeTitle)
                         .foregroundStyle(Color.gray)

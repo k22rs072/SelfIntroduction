@@ -36,7 +36,7 @@ struct Game2EasyView: View {
                 Image(decorative: "face")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 1026,height: 1026)
+                    .frame(width: 1026)
                     .position(x: x,y: y)
                     .onAppear(){
                         x = geometry.size.width/2

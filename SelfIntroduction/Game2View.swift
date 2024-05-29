@@ -10,7 +10,7 @@ import AVFoundation
 
 
 struct Game2View: View {
-    
+    @State var size:CGFloat
     @State private var x = CGFloat.zero
     @State private var y = CGFloat.zero
     @State private var score = 0
@@ -35,7 +35,7 @@ struct Game2View: View {
                 Image(decorative: "face")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 256)
+                    .frame(width: size)
                     .position(x: x,y: y)
                     .onAppear(){
                         x = geometry.size.width/2
@@ -59,11 +59,11 @@ struct Game2View: View {
                     if remainingSeconds == 0   {
                         score = 0
                         remainingSeconds = 10
-                        
-                        
-                    }else if remainingSeconds == 10{
                         x = geometry.size.width/2
                         y = geometry.size.height/2
+                        
+                    }else if remainingSeconds == 10{
+                        
                         timerIsRunning.toggle()
                     }
                     
@@ -111,5 +111,5 @@ struct Game2View: View {
 }
 
 #Preview {
-    Game2View()
+    Game2View(size:256)
 }
