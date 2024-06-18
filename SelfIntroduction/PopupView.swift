@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PopupView: View {
-    @Binding var isPresent: Bool
+    @Binding var Present: Bool
     
     var body: some View {
         ZStack{
@@ -17,7 +17,7 @@ struct PopupView: View {
                 .onTapGesture {
                     // ポップアップ以外の背景をタップしたらポップアップを閉じる
                     withAnimation {
-                        isPresent = false
+                        Present = false
                     }
                 }
             VStack(spacing: 12) {
@@ -26,7 +26,7 @@ struct PopupView: View {
                     Spacer()
                     Button(action: {
                         withAnimation {
-                            isPresent = false
+                            Present = false
                         }
                     }, label: {
                         Image(systemName: "xmark.circle")
@@ -43,29 +43,32 @@ struct PopupView: View {
 //                Image("face")
 //                    .resizable()
 //                    .frame(width: 80, height: 80)
-                NavigationLink(destination: Game2View(size: 1026)) {
+                NavigationLink(destination: Game2View(size: 1024)) {
                     Text("easy")
+                        .frame(width:256)
                         .font(.largeTitle)
-                        .foregroundStyle(Color.gray)
+                        .foregroundStyle(.gray)
                         .padding()
-                        .background(Color.green, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
+                        .background(.green, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
                         .font(.largeTitle)//文字のサイズ
                     
                 }
                 NavigationLink(destination: Game2View(size: 256)) {
                     Text("normal")
+                        .frame(width:256)
                         .font(.largeTitle)
-                        .foregroundStyle(Color.gray)
+                        .foregroundStyle(.gray)
                         .padding()
-                        .background(Color.yellow, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
+                        .background(.yellow, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
                         .font(.largeTitle)//文字のサイズ
                 }
                 NavigationLink(destination: Game2View(size: 64)) {
                     Text("hard")
+                        .frame(width:256)
                         .font(.largeTitle)
-                        .foregroundStyle(Color.gray)
+                        .foregroundStyle(.gray)
                         .padding()
-                        .background(Color.red, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
+                        .background(.red, in: RoundedRectangle(cornerRadius: 8))//背景の形と色を決めている
                         .font(.largeTitle)//文字のサイズ
                     
                 }
@@ -78,14 +81,12 @@ struct PopupView: View {
             .background(Color.white)
             .cornerRadius(12)
         }
-        
-        
     }
-    
 }
+
 
 struct PopupView_Previews: PreviewProvider {
     static var previews: some View {
-        PopupView(isPresent: .constant(true))
+        PopupView(Present: .constant(true))
     }
 }

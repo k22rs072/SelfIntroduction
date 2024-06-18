@@ -23,6 +23,7 @@
 		B598AEA52BE104A000A21DDA /* MyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598AEA42BE104A000A21DDA /* MyScrollView.swift */; };
 		B598AEA92BE12B3800A21DDA /* ShortsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598AEA82BE12B3800A21DDA /* ShortsScrollView.swift */; };
 		B598AEAB2BE145B800A21DDA /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598AEAA2BE145B800A21DDA /* SwipeView.swift */; };
+		B59C5F532C06D86C00BC8E3A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C5F522C06D86C00BC8E3A /* ResultView.swift */; };
 		B5C3A3AF2BE7311400F457D1 /* MyScroll2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3AE2BE7311400F457D1 /* MyScroll2View.swift */; };
 		B5C3A3B12BE921C100F457D1 /* MyScroll3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3B02BE921C100F457D1 /* MyScroll3View.swift */; };
 		B5C3A3B62BEA639800F457D1 /* Game2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C3A3B52BEA639800F457D1 /* Game2View.swift */; };
@@ -70,6 +71,7 @@
 		B598AEA42BE104A000A21DDA /* MyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScrollView.swift; sourceTree = "<group>"; };
 		B598AEA82BE12B3800A21DDA /* ShortsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsScrollView.swift; sourceTree = "<group>"; };
 		B598AEAA2BE145B800A21DDA /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		B59C5F522C06D86C00BC8E3A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		B5C3A3AE2BE7311400F457D1 /* MyScroll2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScroll2View.swift; sourceTree = "<group>"; };
 		B5C3A3B02BE921C100F457D1 /* MyScroll3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScroll3View.swift; sourceTree = "<group>"; };
 		B5C3A3B22BE9DE2500F457D1 /* mov_hts-samp003.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mov_hts-samp003.mp4"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				B5C3A3B52BEA639800F457D1 /* Game2View.swift */,
 				B54B98452C05613300CC1E4F /* PopupView.swift */,
 				B5C3A3C02BEAA96C00F457D1 /* GameTitleView.swift */,
+				B59C5F522C06D86C00BC8E3A /* ResultView.swift */,
 				B53E36DF2BF0FEC100A54DE2 /* DataView.swift */,
 				B53E36E32BF1E7D200A54DE2 /* TextDataView.swift */,
 				B53E36E12BF1CEC300A54DE2 /* DateView.swift */,
@@ -323,6 +326,7 @@
 				B53E36E02BF0FEC100A54DE2 /* DataView.swift in Sources */,
 				B5C3A3B62BEA639800F457D1 /* Game2View.swift in Sources */,
 				B5C3A3B12BE921C100F457D1 /* MyScroll3View.swift in Sources */,
+				B59C5F532C06D86C00BC8E3A /* ResultView.swift in Sources */,
 				B598AEA92BE12B3800A21DDA /* ShortsScrollView.swift in Sources */,
 				B53E36E42BF1E7D200A54DE2 /* TextDataView.swift in Sources */,
 				B598AEAB2BE145B800A21DDA /* SwipeView.swift in Sources */,
