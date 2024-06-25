@@ -86,7 +86,7 @@ struct Game2View: View {
                         }
                         
                     }) {
-                        Text("Start")
+                        Text(remainingSeconds == 0 ? "ReStart":"Start")
                             .padding()
                     }
                 }
