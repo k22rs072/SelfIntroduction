@@ -10,7 +10,7 @@ import AVFoundation
 
 
 struct Game2View: View {
-    @State var size:CGFloat
+    var size:CGFloat
     
     //    @State var showingPopUp = false
     @State private var x = CGFloat.zero
@@ -20,48 +20,48 @@ struct Game2View: View {
     @State private var timerIsRunning = false
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State private var player: AVAudioPlayer?
-  
+    
     var body: some View {
         GeometryReader {geometry in
             let faceImageViewWidth = getScreenWidth(geometry)
             let faceImageViewHeight = getScreenHeight(geometry)
             ZStack{
                 
-
-//                    GeometryReader{geometry2 in
-//                        
-//                        Image("face")
-//                            .resizable()
-//                            .scaledToFit()
-//                        
-//                            .position(x: x,y: y)
-//                            .frame(width: size)
-//                            .onAppear(){
-//                                x = geometry2.frame(in: .local).maxX/2
-//                                y = geometry2.frame(in: .local).maxY/2
-//                            }
-//                            .onTapGesture {
-//                                if timerIsRunning {
-//                                    playSound()
-//                                    x = CGFloat.random(in: geometry2.frame(in: .local).minX + 100...geometry2.frame(in: .local).maxX - 100)
-//                                    
-//                                    y = CGFloat.random(in: geometry2.frame(in: .local).minY + 100...geometry2.frame(in: .local).maxY - 100)
-//                                    score += 1
-//                                }else{
-//                                    playSound２()
-//                                }
-//                                
-//                            }
-//                    }
+                
+                //                    GeometryReader{geometry2 in
+                //
+                //                        Image("face")
+                //                            .resizable()
+                //                            .scaledToFit()
+                //
+                //                            .position(x: x,y: y)
+                //                            .frame(width: size)
+                //                            .onAppear(){
+                //                                x = geometry2.frame(in: .local).maxX/2
+                //                                y = geometry2.frame(in: .local).maxY/2
+                //                            }
+                //                            .onTapGesture {
+                //                                if timerIsRunning {
+                //                                    playSound()
+                //                                    x = CGFloat.random(in: geometry2.frame(in: .local).minX + 100...geometry2.frame(in: .local).maxX - 100)
+                //
+                //                                    y = CGFloat.random(in: geometry2.frame(in: .local).minY + 100...geometry2.frame(in: .local).maxY - 100)
+                //                                    score += 1
+                //                                }else{
+                //                                    playSound２()
+                //                                }
+                //
+                //                            }
+                //                    }
                 VStack{
                     Spacer()
-                    faceImageView(x: $x, y: $y, score: $score, timerIsRunning: $timerIsRunning, size: size, player: $player)
+                    faceImageView( x: $x, y: $y, score: $score, timerIsRunning: $timerIsRunning, size: size, player: $player)
                         .frame(height:geometry.size.height*0.7)
                     Spacer()
                 }
-               
-                    
-                    
+                
+                
+                
                 
                 
                 VStack{
@@ -76,17 +76,16 @@ struct Game2View: View {
                     Spacer()
                     Button(action: {
                         if remainingSeconds == 0   {
-                            score = 0
+                            x = faceImageViewWidth / 2
+                            y = faceImageViewHeight / 2
                             remainingSeconds = 10
-                            _init(faceImageViewWidth, faceImageViewHeight)
-                            
+                            score = 0
                         }else if remainingSeconds == 10{
-                            
                             timerIsRunning.toggle()
                         }
                         
                     }) {
-                        Text(remainingSeconds == 0 ? "ReStart":"Start")
+                        Text(remainingSeconds == 0 ? "Restart":"Start")
                             .padding()
                     }
                 }
@@ -104,22 +103,12 @@ struct Game2View: View {
             
         }
     }
-
-    
     private func getScreenWidth(_ geometry: GeometryProxy) -> CGFloat {
-            return geometry.size.width
-        }
-        
+        return geometry.size.width
+    }
     private func getScreenHeight(_ geometry: GeometryProxy) -> CGFloat {
         return geometry.size.height * 0.7
     }
-    private func _init(_ faceImageViewWidth: CGFloat, _ faceImageViewHeight: CGFloat) {
-            x = faceImageViewWidth / 2
-            y = faceImageViewHeight / 2
-            remainingSeconds = 10
-            score = 0
-    }
-
 }
 struct faceImageView: View {
     @Binding var x: CGFloat
@@ -143,8 +132,8 @@ struct faceImageView: View {
                 .onTapGesture {
                     if timerIsRunning {
                         playSound("voice2.mp3")
-                        x = CGFloat.random(in: geometry2.frame(in: .local).minX+size/2...geometry2.frame(in: .local).maxX - size/2)
-                        y = CGFloat.random(in: geometry2.frame(in: .local).minY + size/2...geometry2.frame(in: .local).maxY - size/2)
+                        x = Xrange(size,geometry2)
+                        y = Yrange(size,geometry2)
                         score += 1
                     } else {
                         playSound("voice1.mp3")
@@ -153,17 +142,22 @@ struct faceImageView: View {
         }
     }
     
-    
+    func Xrange(_ size:CGFloat,_ geometry2:GeometryProxy) -> CGFloat {
+        return CGFloat.random(in: geometry2.frame(in: .local).minX+size/2...geometry2.frame(in: .local).maxX - size/2)
+    }
+    func Yrange(_ size:CGFloat,_ geometry2:GeometryProxy) -> CGFloat {
+        return CGFloat.random(in: geometry2.frame(in: .local).minY + size/2...geometry2.frame(in: .local).maxY - size/2)
+    }
     func playSound(_ voice: String) {
         let components = voice.split(separator: ".")//配列だよSubstring型だってさ初耳
         guard components.count == 2,
-            let name = components.first,
-            let ext = components.last,
-            let url = Bundle.main.url(forResource: String(name), withExtension: String(ext)) else { return }
+              let name = components.first,
+              let ext = components.last,
+              let url = Bundle.main.url(forResource: String(name), withExtension: String(ext)) else { return }
         do {
             player = try AVAudioPlayer(contentsOf: url)
-            player?.play()
-        } catch {
+            player?.play()}
+        catch {
             print("Error playing sound: \(error.localizedDescription)")
         }
     }
